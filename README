@@ -1,0 +1,15 @@
+
+WEBAULA1EX47
+
+git init
+git add *
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/simplecloudservlet/webaula1ex47.git
+git push -u origin main
+
+---
+QLite: Comandos úteis para o Apache2:
+# chgrp -R www-data /var/www/html
+# gpasswd -a root www-data   //Se estiver logado com usuario 'lucio', trocar 'root' por 'lucio'
+# chmod -R 775 /var/www/html  

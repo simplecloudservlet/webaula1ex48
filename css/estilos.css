@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+.selecionado {
+	background-color: aquamarine;
+	border-style: dotted;
+}
+
+
+/* Expressão Regular: contém */
+a[href *= "unicamp"]{
+	color: green;
+}
+
+/* Expressão Regular: termina com */
+a[href ^= "html"]{
+	color: green;
+}
+
+/* Expressão Regular: inicia com */
+a[href ^= "https:"]{
+	color: red;
+}
+
+/* Expressão Regular: igual a */
+img[src = "img/vendas2.png"]{
+	background-color: yellow;
+}
+
+/* Formata linha pares da tabela*/
+tr:nth-child(even){
+	background-color: silver;
+}
+
+/* Formata linha impares */
+li:nth-child(odd){
+	color: red;
+}
+
+th:hover {
+	background-color: yellow;
+}
+
+.estiloAvaliacao {
+	font-size: large;
+	font-style: italic;
+	color: red;
+	
+}
+
+#destacar {
+	font-size: large;
+	font-style: italic;
+	color: red;
+	
+}
+h1.negrito {
+	font-family: Arial;
+	font-style: bold;
+	border-top: dashed;
+}
+
+h2, h3 {
+	font-family: Verdana;
+	font-style: italic;
+}
+
+
+
+body {
+	font-family: Georgia;
+	font-size: 15px;
+}
+
+#rotuloAvaliacao {
+	color: #0044ff;
+	font-size: 1.5em;
+}
+
+#azul {
+	color: #0044ff;
+	font-size: 1.5em;
+}
+
+#verde {
+	color: #00fe57;
+	font-size: 5.5em;
+}
+
+#tabela {
+	border: 1px solid black;
+	text-align: center;
+}
