@@ -231,15 +231,8 @@
 		//TODO2
 		criarTabelas($db);
 
-
 		//TODO3
 		definirUTF8($db);
-
-		//TODO4
-		//definirCaracterInclusao($db);
-
-		//$tabela = "T_ESTADOS";
-		//$sql = $db->prepare("INSERT INTO $tabela(nome) values (?)");
 
 		//TODO4
 		$fname = 'estados.txt';
@@ -270,19 +263,6 @@
 		//TODO12
 		limparTabelas($db);
 
-		/*
-		//TODO5
-		inserirTupla($db);
-		
-		//TODO6
-		imprimir($db);
-
-		//TODO11
-		atualizarTupla($db);
-
-		//TODO6
-		imprimir($db);
-		*/
 	}
 
 		//Invoca as funcoes
