@@ -1,6 +1,4 @@
-
-	<?php
-
+<?php 
 	function executarSQL($db, $sql){
 
 		try {
@@ -129,9 +127,7 @@
 				}*/
 				$status = !$status;
 
-				executarSQL($db, 'INSERT INTO T_ESTADOS(sigla,nome) VALUES ( "' . \ 
-				utf8_encode($linha[0]) . '", "' . \
-				utf8_encode($linha[1]) . '");', $status);
+				executarSQL($db, 'INSERT INTO T_ESTADOS(sigla,nome) VALUES ( "' . utf8_encode($linha[0]) . '", "' . utf8_encode($linha[1]) . '");', $status);
 			
 			}
 			echo '</div>';
@@ -217,15 +213,15 @@
 		$DATABASE = "mysql";
 		$HOST = "localhost";
 		$DBNAME = "db_cidades"; //mysql> create database db_cidades;
-		$USER = "lucio";
+		$USER = "ubuntu"; 
 		$PASSWORD = "root";
 
-		try {
+		//try {
 			$db = new PDO("$DATABASE: host=$HOST; dbname=$DBNAME", $USER, $PASSWORD); //Para o MySQL
-			var_dump($db);
-		} catch(PDOException $e){
-			echo '<h3>EXCEPTION1: ' . $e->getMessage() . '</h3>';
-		}
+		//	var_dump($db);
+		//} catch(PDOException $e){
+		//	echo '<h3>EXCEPTION1: ' . $e->getMessage() . '</h3>';
+		//}
 		
 
 		//TODO2
@@ -267,5 +263,5 @@
 
 		//Invoca as funcoes
 		main();
+
 	?>
-	
